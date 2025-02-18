@@ -1,0 +1,31 @@
+services:
+  post:
+    image: postgres
+    container_name: post
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    networks:
+      - djangonetwork
+    restart: always
+
+
+  django:
+    build: .
+    container_name: django
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - post
+    networks:
+      - djangonetwork
+  
+networks:
+    djangonetwork:
+      driver: bridge
