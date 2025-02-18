@@ -1,6 +1,6 @@
-# WorkIndia Assignment - railway management system
+# WorkIndia Assignment
 
-- stateless user auth using JSWT
+- stateless user auth using JWT
 - added database lock to make sure ne user can successfully book seats when multiple users try to do so
 - Secure admin endpoints by an API key for authe. Include the header 'X-IRCTC-API-KEY-SECRET' in all admin API requests to validate access
 
