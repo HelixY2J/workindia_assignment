@@ -95,3 +95,25 @@ The app defines following CRUD APIs.
 
 - Login
 ![login](./res/login_access.png)
+
+- Adding train
+![add_trains](./res/add_train.png)
+
+- Adding train schedule
+![add_schedule](./res/added_sch_train.png)
+
+- Get avail trains
+![get_Avail_status](./res/get_trains.png)
+
+
+- Book tickets
+![book_tickets](./res/book_tickers.png)
+
+- Updating train schedule
+![update_train_sch](./res/updated_schedule.png)
+
+- No admin api key
+![no_admin_api](./res/admin_no_api.png)
+
+- Invalid admin api key
+![invalid_api](./res/unauth_admin.png)
